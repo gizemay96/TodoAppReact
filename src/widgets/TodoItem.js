@@ -4,7 +4,6 @@ export default class TodoItem extends React.Component {
   render() {
     return (
       <div className="container item-div">
-        <div className="card">
           <div className="input-group todo-item-div container mb-3">
             <input
               type="text"
@@ -22,7 +21,6 @@ export default class TodoItem extends React.Component {
               </button>
             </div>
           </div>
-        </div>
       </div>
     );
   }

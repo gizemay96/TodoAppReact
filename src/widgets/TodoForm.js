@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState }  from "react";
 import TodoItem from "./TodoItem";
 
 export default class TodoForm extends React.Component {
@@ -15,8 +15,7 @@ export default class TodoForm extends React.Component {
     event.preventDefault();
 
     if (this.state.todoText.length < 3) {
-      //alert("The todo is so short");
-      console.log("The todo is so short");
+      alert("Todo is so short");
       return;
     }
 
@@ -47,7 +46,6 @@ export default class TodoForm extends React.Component {
         />
       );
     });
-
     return (
       <div className="mt-5">
         <h1 className="todo-title pb-5 mb-5">My Todo List</h1>
@@ -63,7 +61,7 @@ export default class TodoForm extends React.Component {
             />
             <div className="input-group-append">
               <button className="btn btn-primary btn-add" type="submit">
-                <i class="fas fa-plus icon-plus"></i>
+                <i className="fas fa-plus icon-plus"></i>
               </button>
             </div>
           </div>
